@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/do_an_java
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 20MB
+      max-request-size: 20MB
+  mail:
+    host: smtp.gmail.com           # Địa chỉ SMTP server
+    port: 587                      # Cổng SMTP
+    username: phamvandoan17.11.2003@gmail.com # Địa chỉ email của bạn
+    password: xieq ulxm ecew crbu        # Mật khẩu email của bạn
+    properties:
+      mail:
+        smtp:
+          auth: true                # Bật xác thực SMTP
+          starttls:
+            enable: true            # Sử dụng SSL/TLS
+
+jwt:
+  privateKey: dBO3LafCrehrXU+/8xthCI4nhFaCAD6DWgKFkRjvwcA=
+
+
+fileUpLoad:
+  root-path: C:\Users\MSI Modern15\Desktop\uploads
+
